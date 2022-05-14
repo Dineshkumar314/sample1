@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creation of Array and Object</title>
+<style>
+div p{
+	background:lightgrey;
+	max-width: 50%;
+	min-widrh: 20%;
+	padding: 20px;
+	border-style: solid;
+	border-color:black ;
+	border-width: 2px;
+}
+</style>	
+</head>
+<body>
+<h2 style="margin-left:150px;">Creation of Arrays and Objects</h2>
+<p style="font-size: 20px; font-weight: bold; margin-left:250px ;">Anna University</p>
+<div><p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p> </div>
+<script>
+var University = [
+		{
+			collegename:"ABC college of Engineering",
+			studentname:"John",
+			year:2005,
+			age:24,
+		},
+		{
+			collegename:"ABC college of Engineering",
+			studentname:" Arun",
+			year:2005,
+			age:24,	
+		},
+		{
+			collegename:"ABC college of Engineering",
+			studentname:"Prasanth",
+			year:2005,
+			age:24,	
+		}];
+
+
+document.getElementById("demo1").innerHTML= "<B>College Name:</B>" + " " +University[0].collegename  +"<br>"+ "<B>Student Name:</B>" + " " + University[0].studentname +"<br>"+ "<B>Year:</B>" + " " + University[0].year +"<br>" + "<B>Age:</B>" + " " + University[0].age;
+
+document.getElementById("demo2").innerHTML= "<B>College Name:</B>" + " " +University[1].collegename  +"<br>"+ "<B>Student Name:</B>" + " " + University[1].studentname +"<br>"+ "<B>Year:</B>" + " " + University[1].year +"<br>"+ "<B>Age:</B>" + " " + University[1].age;
+
+document.getElementById("demo3").innerHTML= "<B>College Name:</B>" + " " +University[2].collegename  +"<br>"+ "<B>Student Name:</B>" + " " + University[2].studentname +"<br>"+ "<B>Year:</B>" + " " + University[2].year +"<br>"+ "<B>Age:</B>" + " " + University[2].age;
+</script>
+</body>
+</html>
