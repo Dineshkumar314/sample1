@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Creating custom constructor</title>
+</head>    
+<body>
+ <h2>Creating Object with custom constructor</h2>
+ <p>Output is in the form of console</p>
+ <script>
+     function paintdetails(brand,colour,type,price)
+     {
+         this.brand = brand;
+         this.colour = colour;
+         this.type = type;
+         this.price = price;
+     }
+let asianpaint = new paintdetails('TractorEmulsion', 'matteblue', 'exterior', 2500)
+let asianpaints = new paintdetails('Ultimate', 'mediumgreen', 'exterior', 3000)
+let nipponpaint = new paintdetails('Atomfibra', 'lightviolet', 'interior', 1000)
+console.log(asianpaint,asianpaints, nipponpaint);
+
+
+ </script>
+</body>
+</html>

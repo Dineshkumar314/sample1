@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Variables </title>
+</head>    
+<body>
+ <h2>Creating variables with all data Types and check its scope </h2>
+ <p>Output is in the form of console</p>
+ <script>
+ //Number
+ function add()
+ {
+     let a = 4;
+     let b = 6;
+     let c = a + b;
+     return c;
+ }
+ let value = add();
+ console.log(value);
+ let a = 10;
+ let b = 15;
+ const sum = a + b;
+ console.log(sum);
+
+ //string and boolean
+ let x, y;
+ x = 'Dark';
+ y = 'storm';
+ const z = x + y;
+ console.log(typeof(z));
+ console.log(Boolean(z));
+ let val = '';
+ console.log(Boolean(val));
+//array
+ let cycles =["Hero", 'Hercules','Atlas','Ninty one'];
+ console.log(cycles);
+ const empDetails=[
+     {
+         firstName:'Arun',
+         lastName:'kumar',
+         regNo:15,
+         age:25}
+        ];
+ console.log(empDetails);
+//object
+ let bike ={
+    model:'pulsar',
+    color:'black',
+    engine: '150cc',
+    fuelType: 'petrol',
+    price: 75000,
+    }
+console.log(bike); 
+ </script>
+</body>
+</html>
