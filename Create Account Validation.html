@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Account Validation </title>
+<h1>Application Form</h1>
+<script>
+function matchpassword()
+{
+ var pw1 = document.getElementById("pwsd1").value;
+ var pw2 = document.getElementById("pwsd2").value;
+if (pw1 != pw2) 
+{
+	alert("Passwords didnot match");
+	
+}
+else
+{
+	alert("Password created successfully");
+}
+}
+</script>
+</head>
+<body>
+<form >
+<label>Firstname:</label> <input type="textbox" placeholder="Enter the name" required><br>
+<label>Lastname:</label> <input type="textbox" placeholder="Enter the name" required><br>
+<label>Password:</label> <input type="password" id="pwsd1" value="     " required><br>
+<label>Confirm Password:</label> <input type="password" id="pwsd2" value="     " required><br>
+<label>Age:</label> <input type="textbox" required ><br>
+<label>Gender:</label><input type="radio" name="gender" value="Male">Male
+<input type="radio" name="gender" value="Female">Female<br>
+<label>Games</label><input type="checkbox" name="Games" value="Kabadi">Kabadi
+	<input type="checkbox" name="Games" value="Cricket">Cricket
+	<input type="checkbox" name="Games" value="Football">Football
+	<input type="checkbox" name="Games" value="Hockey">Hockey<br>
+<label>Heros:</label><select name="Heros">
+	<option name="Heros" value="Dhoni">Dhoni</option>
+	<option name="Heros" value="Virat">Virat</option> 
+	<option name="Heros" value="Rohit">Rohit</option></select><br>
+<input type="checkbox" value="Admin">Admin<br>
+<button type="submit" onclick="matchpassword()">Create Account</button> 
+</form>
+</body>	
+</html>

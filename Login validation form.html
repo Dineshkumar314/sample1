@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+    
+<script>
+function validateform(){
+ let name = document.myform.name.value;
+ let password = document.myform.password.value;
+
+ if(name == null || name == ""){
+ alert("Username cannot be empty");
+ return false;
+}else if(password.length < 6){
+    alert("Password must be at least 6 characters long.");
+    return false;}
+}
+</script>
+
+<form name ="myform" method ="post" onsubmit ="return validateform()">
+<label>Username:</label><input type="text" name="name" ><br/>
+<label>password:</label><input type="password" name="password" ><br/>
+<input type="submit" value="Login">
+</form>
+</body>
+</html>

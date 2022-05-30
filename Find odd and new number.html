@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creation of Odd and Even number</title>
+    <style>
+       
+       h2{
+           
+            text-decoration-line: underline;
+        }
+     </style>
+</head>
+<body>
+    <h2>Find out an Odd and Even Numbers:</h2>
+    <div>
+    <label><b>Enter number</b></label><br/>
+    <input type="number" placeholder =" Enter the number" name="" id="oddeven" onkeyup="isCheck()">
+    <span id="showmsg"></span></div>
+    
+<script>
+ function isCheck(){
+    let num = document.getElementById('oddeven').value;
+    {
+        if(num % 2 === 0){
+            document.getElementById('showmsg').innerHTML = 
+            "Number" + " " + num + " is Even number";
+        }else{
+            document.getElementById('showmsg').innerHTML = 
+            "Number" + " " + num + " is odd number";
+        }
+    }
+ 
+ }
+console.log("Print Odd number:");
+ for(let i=50;i<100; i++){
+    if(i%2 != 0){
+    console.log([i]);
+}
+}
+console.log("Print Even number:")
+for (let j=50; j<100; j++){
+    if(j%2 == 0){
+ console.log([j]);
+}
+}
+</script>
+
+<p>By Printing the ODD and EVEN number in Array, the output in the form of console.</p>
+</body>
+</html>

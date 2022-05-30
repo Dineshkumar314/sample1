@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>\
+    <title></title>
+    <head>
+        <body>
+            <script>
+                function matchpass(){
+                    let firstpassword= document.f1.password.value;
+                    let secondpassword= document.f1.password2.value;
+                    let fname= document.f1.name.value;
+                    if(fname = fname){
+                        return true;
+                    }
+                    else{
+                        alert("User not exists. Please create a new user account");
+                    }
+                    if(firstpassword == secondpassword){
+                        alert("Logged in successfully");
+                        return true;
+                    }
+                    else{
+                        alert("Password not matching");
+                        return false;
+                    }
+                }
+            </script>
+            <form name= "f1" onsubmit="return matchpass()">
+            <label>UserName:</label><input type="text" name="name"><br/>
+            <label>Password:</label><input type="password" name="password"><br/>
+            <label>Re-type Password:</label><input type="password" name="password2"><br/>
+            <input type="submit" value="Login">
+            </form>
+        </body>
+    </head>
+</html>
