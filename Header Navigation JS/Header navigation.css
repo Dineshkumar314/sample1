@@ -1,0 +1,40 @@
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+	float:left;
+    display: block;
+    margin-right:10px;
+	text-align: center;
+	text-decoration-line:none;
+   
+	color: black;
+    border-style: solid;
+    border-width:3px;
+    padding: 15px 30px;
+    border-color:rgb(146, 199, 181);
+    background-color:rgb(146, 199, 181);
+    }
+
+    li a:hover:not(.active) {
+        background-color: rgb(220, 240, 164);
+      }
+  
+  .active {
+    background-color: rgb(207, 194, 181);
+  }
+     .form {
+    display: block;
+    position:absolute;  
+    bottom : 300px;
+    right: 25px;
+    padding:5px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    
+  }
+   
+  

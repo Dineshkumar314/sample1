@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Header Navigation</title>
+        <link rel="stylesheet" href="header navigation.css">
+     </head>
+    <body>
+       
+        <h2 onclick="this.innerHTML= 'Welcome to Shayan'">Header</h2>
+        <h2>JavaScript HTML Events</h2>
+        
+        <div>
+            <ul>
+                <li onclick="home()"> <a class="active">Home</a></li>
+                <li onclick="about()"> About us</li>
+                <li > Contact us</li>
+                <li  onclick="openForm()" style="float:right"><a >Login</a></li>
+                <li style="float:right">Create account</li>
+            </ul>
+        </div>
+       
+        <div class="form" id="myform">
+            <form action="/action_page.php"  >
+              <h1>Login</h1>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required><br>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required><br>
+          
+              <button type="submit" >Login</button>
+              <button type="button"  onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        <script src="./Header navigation.js"></script>
+    </body>
+</html>
